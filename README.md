@@ -13,9 +13,9 @@ This dataset include main domains and their subdomains and the count is as follo
 ### Data Structure
 
 The whole data set is separated into two json files, one containing only the main academic domains and the other includes their subdomains too. General format of json files are as follows:
-```json
+```
 [
-	// ...
+	...
 	{
 		"domain": "umada.ac.id",
 		"country": "Indonesia",
@@ -26,7 +26,7 @@ The whole data set is separated into two json files, one containing only the mai
 			"www.umada.ac.id"
 		]
 	},
-	// ...
+	...
 ]
 ```
 ### Process
