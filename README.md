@@ -2,26 +2,34 @@
 
 This dataset includes domains of academic institutions such as universities, colleges, and research institutes.
 
+### Statistics
+This dataset include main domains and their subdomains and the count is as follows:
+|  | count   |
+|-------------|---------|
+| Main Domains | 88005   |
+| Subdomains   | 1024891 |
+| Countries   | 198 |
+<br>
 
 ### Data Structure
 
 The whole data set is separated into two json files, one containing only the main academic domains and the other includes their subdomains too. General format of json files are as follows:
-
-    [
-    	...
-    	{
-			"domain": "umada.ac.id",
-			"country": "Indonesia",
-			"country_alpha_2": "ID",
-			"subdomains": [
-				"elearning.umada.ac.id",
-				"ojs.umada.ac.id",
-				"www.umada.ac.id"
-			]
-		},
-    	...
-    ]
-
+```json
+[
+	...
+	{
+		"domain": "umada.ac.id",
+		"country": "Indonesia",
+		"country_alpha_2": "ID",
+		"subdomains": [
+			"elearning.umada.ac.id",
+			"ojs.umada.ac.id",
+			"www.umada.ac.id"
+		]
+	},
+	...
+]
+```
 ### Process
 First a large data set including over 300 million unique domain name was collected. Then academic domain names with the following patterns were separated: `*.edu`, `*.ac.*` and `*.edu.*`.
 Finally a post process phase including country identification and subdomain extraction takes place.
