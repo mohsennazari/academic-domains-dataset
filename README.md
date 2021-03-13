@@ -26,6 +26,7 @@ The whole data set is separated into two json files, one containing only the mai
 First a large data set including over 300 million unique domain name was collected. Then academic domain names with the following patterns were separated: `*.edu`, `*.ac.*` and `*.edu.*`.
 Finally a post process phase including country identification and subdomain extraction takes place.
 
+![Process Architecture](https://raw.githubusercontent.com/mohsennazari/academic-domains-dataset/master/assets/academic_domains_list_architecture.jpg)
 
 # Todo
 There are always alot to do, but this is our near future plans:
